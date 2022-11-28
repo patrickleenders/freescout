@@ -28,6 +28,13 @@ class Mailbox extends Model
     const TICKET_STATUS_PENDING = 2;
     const TICKET_STATUS_CLOSED = 3;
     const TICKET_STATUS_KEEP_CURRENT = 0;
+    const TICKET_AWAITING_CUSTOMER = 4;
+    const TICKET_AWAITING_SUPPLIER = 5;
+    const TICKET_AWAITING_TODO = 6;
+    const TICKET_AWAITING_PROJECT = 7;
+    const TICKET_AWAITING_DUPLICATE = 9;
+    
+
 
     /**
      * Default Assignee.

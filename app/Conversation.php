@@ -70,15 +70,22 @@ class Conversation extends Model
     const STATUS_PENDING = 2;
     const STATUS_CLOSED = 3;
     const STATUS_SPAM = 4;
-    // Present in the API, but what does it mean?
-    const STATUS_OPEN = 5;
+    const STATUS_AWAITING_CUSTOMER = 5;
+    const STATUS_AWAITING_SUPPLIER = 6;
+    const STATUS_AWAITING_TODO = 7;
+    const STATUS_AWAITING_PROJECT = 8;
+    const STATUS_AWAITING_DUPLICATE = 9;
 
     public static $statuses = [
         self::STATUS_ACTIVE  => 'active',
         self::STATUS_PENDING => 'pending',
+        self::STATUS_AWAITING_CUSTOMER => 'pending_customer',
+        self::STATUS_AWAITING_SUPPLIER => 'pending_supplier',
+        self::STATUS_AWAITING_TODO => 'pending_todo',
+        self::STATUS_AWAITING_PROJECT => 'pending_project',
+        self::STATUS_AWAITING_DUPLICATE => 'pending_duplicate',
         self::STATUS_CLOSED  => 'closed',
-        self::STATUS_SPAM    => 'spam',
-        //self::STATUS_OPEN => 'open',
+        self::STATUS_SPAM    => 'spam'
     ];
 
     /**
@@ -88,16 +95,14 @@ class Conversation extends Model
         self::STATUS_ACTIVE  => 'flag',
         self::STATUS_PENDING => 'ok',
         self::STATUS_CLOSED  => 'lock',
-        self::STATUS_SPAM    => 'ban-circle',
-        //self::STATUS_OPEN => 'folder-open',
+        self::STATUS_SPAM    => 'ban-circle'
     ];
 
     public static $status_classes = [
         self::STATUS_ACTIVE  => 'success',
         self::STATUS_PENDING => 'lightgrey',
         self::STATUS_CLOSED  => 'grey',
-        self::STATUS_SPAM    => 'danger',
-        //self::STATUS_OPEN => 'folder-open',
+        self::STATUS_SPAM    => 'danger'
     ];
 
     public static $status_colors = [
@@ -527,16 +532,32 @@ class Conversation extends Model
                 return __('Pending');
                 break;
 
+            case self::STATUS_AWAITING_CUSTOMER :
+                return __('pending_customer');
+                break;
+
+            case self::STATUS_AWAITING_SUPPLIER :
+                return __('pending_supplier');
+                break;
+
+            case self::STATUS_AWAITING_TODO :
+               return __('pending_todo');
+               break;
+
+            case self::STATUS_AWAITING_PROJECT :
+                return __('pending_project');
+                break;
+
+            case self::STATUS_AWAITING_DUPLICATE :
+                return __('pending_duplicate');
+                break;
+
             case self::STATUS_CLOSED:
                 return __('Closed');
-                break;
+                break;                
 
             case self::STATUS_SPAM:
                 return __('Spam');
-                break;
-
-            case self::STATUS_OPEN:
-                return __('Open');
                 break;
 
             default:

@@ -22,7 +22,6 @@
             $thread = new App\Thread();
         }
     @endphp
-
     <div id="conv-layout" class="conv-new">
         <div id="conv-layout-header">
             <div id="conv-toolbar">

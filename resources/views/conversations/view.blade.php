@@ -89,7 +89,7 @@
                             </div>
                         </li>
                     @endif
-                    <li>
+                    <li>    
                         <div class="btn-group" id="conv-status" data-toggle="tooltip" title="{{ __("Status") }}: {{ $conversation->getStatusName() }}">
                             @if ($conversation->state != App\Conversation::STATE_DELETED)
                                 <button type="button" class="btn btn-{{ App\Conversation::$status_classes[$conversation->getStatus()] }} btn-light conv-info-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="{{ __("Status") }}: {{ $conversation->getStatusName() }}"><i class="glyphicon glyphicon-{{ App\Conversation::$status_icons[$conversation->getStatus()] }}"></i></button>
