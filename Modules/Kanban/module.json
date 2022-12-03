@@ -1,0 +1,24 @@
+{
+    "name": "Kanban",
+    "alias": "kanban",
+    "description": "Manage conversations and cards in Kanban style!",
+    "version": "1.0.9",
+    "detailsUrl": "https://freescout.net/module/kanban/",
+    "author": "FreeScout",
+    "authorUrl": "https://freescout.net",
+    "requiredAppVersion": "1.8.23",
+    "license": "AGPL-3.0",
+    "keywords": [],
+    "active": 0,
+    "order": 0,
+    "providers": [
+        "Modules\\Kanban\\Providers\\KanbanServiceProvider"
+    ],
+    "aliases": {
+        "Kanban": "Modules\\Kanban\\Providers\\KanbanServiceProvider"
+    },
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

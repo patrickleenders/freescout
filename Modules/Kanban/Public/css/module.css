@@ -1,0 +1,136 @@
+#kn-board {
+    padding: 0 10px 10px;
+    overflow: auto;
+    height: calc(100vh - 108px);
+}
+#kn-board .kn-swimlane:nth-child(n+2) {
+    margin-top: 10px;
+}
+.kn-swimlane {
+    background-color: #F1F3F5;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    clear: both;
+    margin-left: -10px;
+    margin-right: -10px;
+    /*position: fixed;
+    width: 100%;*/
+}
+.kn-col-name {
+    font-weight: bold;
+    padding: 10px 0 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.kn-col .btn {
+    display: block;
+}
+.kn-col {
+    min-width: 295px;
+    max-width: 295px;
+    margin: 0 10px;
+}
+.kn-row {
+	display: flex;
+    flex-wrap: nowrap;
+}
+.kn-add-card {
+	margin-bottom: 15px;
+}
+.kn-card {
+    display: block;
+	border: 1px solid #dedede;
+    -webkit-box-shadow:0 0 5px rgba(0,0,0,.2);
+    box-shadow:0 0 5px rgba(0,0,0,.2);
+    padding: 8px 10px 7px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #93a1af;
+}
+.kn-card:hover {
+    text-decoration: none;
+}
+.kn-card-name {
+	color: #2a3b47;
+    font-weight: bold;
+    word-break: break-all;
+}
+/*.kn-card-customer {
+    font-weight: bold;
+}*/
+.kn-card .glyphicon {
+    color: #93a1af;
+	font-size: 12px;
+}
+.kn-conv-counter {
+    border: 1px solid #d6dde3;
+    background: #f8f9f9;
+    top: -1px;
+    font-size: 10px;
+    padding: 0 3px;
+    color: #a5b2bd;
+    margin-left: 3px;
+}
+.kn-card-active {
+    background-color: #f4f8fd;
+    overflow: hidden;
+}
+.kn-card-preview {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.kn-card-assignee {
+    margin-left: 5px;
+}
+.kn-card-date {
+    float: right;
+    position: relative;
+    top: 2px;
+}
+.kn-card-footer {
+    margin-top: 5px;
+    padding-top: 7px;
+    border-top: 1px solid #e3e8eb;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.kn-card-custom-fields {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.kn-show-closed {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.kn-show-closed .glyphicon {
+    top: 2px;
+}
+.kn-more {
+    border-style: dashed;
+    padding: 3px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#kn-heading .kn-main-btn:first-child {
+    margin-left: 7px;
+}
+.kn-main-btn {
+    padding: 5px;
+}
+.kn-disabled-option {
+    background-color: #eeeeee;
+}
+.kn-col-counter {
+    font-weight: normal;
+}
+.kn-filters-inputs {
+    overflow-y: auto;
+    max-height: 70vh;
+    overflow-x: hidden;
+}
+#kn-heading .in-heading {
+    white-space: nowrap;
+}

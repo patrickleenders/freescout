@@ -1,0 +1,1 @@
+<li class="{{ \App\Misc\Helper::menuSelectedHtml('kanban') }}"><a href="{{ route('kanban.show') }}">{{ __('Kanban') }}</a></li>

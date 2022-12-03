@@ -1,0 +1,5 @@
+{
+    ":person is @mentioned in a conversation": ":person упомянул(а) вас в тикете",
+    "I'm @mentioned in a conversation": "Я @упомянут в тикете",
+    ":person mentioned you in a note on #:conversation_number": ":person упомянул(а) вас в примечании к #:conversation_number"
+}

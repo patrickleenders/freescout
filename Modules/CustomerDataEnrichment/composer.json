@@ -1,0 +1,25 @@
+{
+    "name": "freescout/customerdataenrichment",
+    "description": "",
+    "authors": [
+        {
+            "name": "FreeScout",
+            "email": "support@freescout.net"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\CustomerDataEnrichment\\Providers\\CustomerDataEnrichmentServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\CustomerDataEnrichment\\": ""
+        }
+    }
+}

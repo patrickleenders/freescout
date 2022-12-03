@@ -1,0 +1,25 @@
+{
+    "name": "freescout/imapmove",
+    "description": "",
+    "authors": [
+        {
+            "name": "FreeScout",
+            "email": "support@freescout.net"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\ImapMove\\Providers\\ImapMoveServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\ImapMove\\": ""
+        }
+    }
+}
